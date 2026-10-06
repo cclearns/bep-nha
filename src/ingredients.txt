@@ -1,0 +1,194 @@
+# id|Tên|khu|đơn vị|gram/đv|kcal/100g|đạm/100g|tags|sẵn trong bếp
+# khu: thit ca trung rau cu nam bot gv kho
+# tags: m thịt, s hải sản/cá, sh giáp xác/nhuyễn thể, e trứng, f mắm, n đậu phộng/hạt, fe sắt, mg magie, b6, om omega3, w ấm, c mát, hot cay, sa mặn nhiều, fb xơ, v rau củ, cb tinh bột tốt
+ba_chi|Thịt ba chỉ|thit|g|1|518|9|m|0
+nac_vai|Thịt nạc vai|thit|g|1|236|17|m|0
+nac_dam|Thịt thăn (nạc)|thit|g|1|143|22|m|0
+thit_bam|Thịt heo băm|thit|g|1|260|16|m|0
+suon_non|Sườn non|thit|g|1|250|14|m|0
+chan_gio|Chân giò|thit|g|1|230|17|m|0
+tai_lon|Tai lợn|thit|g|1|230|22|m|0
+long_lon|Lòng lợn|thit|g|1|170|14|m|0
+luoi_lon|Lưỡi lợn|thit|g|1|225|16|m,fe|0
+mui_lon|Thịt mũi lợn|thit|g|1|250|16|m|0
+dai_lon|Thịt dải lợn|thit|g|1|300|15|m|0
+xuc_xich|Xúc xích|thit|g|1|300|12|m,sa|0
+xuong_heo|Xương heo|thit|g|1|200|12|m|0
+ga_dui|Đùi gà|thit|g|1|215|18|m,b6|0
+ga_canh|Cánh gà|thit|g|1|220|18|m,b6|0
+ga_nguyen|Gà ta (nguyên con)|thit|g|1|190|19|m,b6|0
+ga_uc|Ức gà|thit|g|1|120|23|m,b6|0
+ga_co|Cổ gà|thit|g|1|190|16|m|0
+vit|Thịt vịt|thit|g|1|270|17|m|0
+ngan|Thịt ngan|thit|g|1|200|19|m,fe|0
+bo_thit|Thịt bò (thăn/mông)|thit|g|1|150|21|m,fe|0
+bo_nam|Nạm bò|thit|g|1|200|24|m,fe|0
+bo_gan|Gân bò|thit|g|1|150|30|m|0
+ech|Ếch|thit|g|1|90|16|m|0
+nhong_tam|Nhộng tằm|thit|g|1|130|14|m|0
+ca_basa|Cá basa|ca|g|1|125|15|s|0
+ca_ro_phi|Cá rô phi|ca|g|1|130|20|s|0
+ca_nuc|Cá nục|ca|g|1|140|20|s,om|0
+ca_bac_ma|Cá bạc má|ca|g|1|150|20|s,om|0
+ca_loc|Cá lóc|ca|g|1|97|18|s|0
+ca_com|Cá cơm|ca|g|1|131|20|s,om|0
+ca_bong|Cá bống|ca|g|1|95|17|s|0
+ca_thu|Cá thu|ca|g|1|190|20|s,om,b6|0
+ca_chep|Cá chép|ca|g|1|127|18|s|0
+ca_dieu_hong|Cá diêu hồng|ca|g|1|120|19|s|0
+ca_moi|Cá mòi|ca|g|1|208|25|s,om,fe|0
+ca_cam|Cá cam|ca|g|1|130|20|s|0
+ca_nho|Cá nhỏ (cá con)|ca|g|1|130|18|s|0
+ca_trung|Cá có trứng|ca|g|1|150|20|s|0
+ca_ro_dong|Cá rô đồng|ca|g|1|110|18|s|0
+tom|Tôm tươi|ca|g|1|85|18|s,sh|0
+tom_dong|Tôm đồng|ca|g|1|80|17|s,sh|0
+tom_kho|Tôm khô|ca|g|1|300|60|s,sh,sa|0
+muc|Mực|ca|g|1|90|16|s|0
+ngao|Ngao / nghêu|ca|g|1|60|10|s,sh,fe|0
+hau|Hàu|ca|g|1|70|8|s,sh,fe|0
+so|Sò|ca|g|1|80|12|s,sh,fe|0
+chem_chep|Chem chép|ca|g|1|70|12|s,sh|0
+sua|Sứa|ca|g|1|36|5|s|0
+cua_dong|Cua đồng|ca|g|1|100|14|s,sh,c|0
+trung_ga|Trứng gà|trung|quả|55|143|12.5|e|0
+trung_cut|Trứng cút|trung|quả|10|158|13|e|0
+trung_vit_lon|Trứng vịt lộn|trung|quả|70|182|14|e,fe,w|0
+dau_phu|Đậu phụ|trung|bìa|100|90|9|mg,fe|0
+dau_hu_non|Đậu hũ non|trung|hộp|300|55|5|mg|0
+nam_rom|Nấm rơm|nam|g|1|22|3|v|0
+nam_bao_ngu|Nấm bào ngư|nam|g|1|33|3|v,b6|0
+nam_dui_ga|Nấm đùi gà|nam|g|1|35|3|v|0
+nam_huong|Nấm hương / đông cô (tươi)|nam|g|1|35|3|v|0
+nam_kim_cham|Nấm kim châm|nam|g|1|37|2.7|v|0
+nam_hai_san|Nấm hải sản|nam|g|1|30|3|v|0
+nam_thap_cam|Nấm thập cẩm|nam|g|1|30|3|v|0
+moc_nhi|Mộc nhĩ (khô)|nam|g|1|300|10|fe,fb|0
+rau_muong|Rau muống|rau|g|1|20|3|v,c,fe|0
+rau_dien|Rau dền|rau|g|1|23|2.5|v,fe,mg|0
+rau_ngot|Rau ngót|rau|g|1|35|5|v,fe,c|0
+rau_lang|Rau lang|rau|g|1|22|3|v|0
+mong_toi|Mồng tơi|rau|g|1|19|2|v,c,mg|0
+rau_day|Rau đay|rau|g|1|24|3|v,c,fe|0
+rau_nhut|Rau nhút|rau|g|1|25|1.5|v,c|0
+rau_bau|Rau bầu (ngọn bầu)|rau|g|1|20|2|v|0
+cai_ngot|Cải ngọt|rau|g|1|15|1.5|v,mg|0
+cai_thia|Cải thìa|rau|g|1|13|1.5|v|0
+cai_xanh|Cải xanh|rau|g|1|15|2|v,mg|0
+cai_thao|Cải thảo|rau|g|1|12|1.2|v|0
+bap_cai|Bắp cải|rau|g|1|25|1.3|v,fb|0
+bong_cai|Bông cải xanh|rau|g|1|34|2.8|v,mg,fb|0
+su_hao|Su hào|rau|g|1|27|1.7|v|0
+can_nuoc|Cần nước|rau|g|1|16|0.8|v,c|0
+can_tay|Cần tây|rau|g|1|16|0.7|v,c|0
+gia|Giá đỗ|rau|g|1|30|3|v,c|0
+he|Hẹ|rau|g|1|30|3|v,w|0
+toi_tay|Lá tỏi tây|rau|g|1|60|2|v,w|0
+hanh_la|Hành lá|rau|g|1|32|1.8|v|0
+rau_ram|Rau răm|rau|g|1|20|2|v,w|0
+rau_thom|Rau thơm các loại|rau|g|1|25|2.5|v|0
+thi_la|Thì là|rau|g|1|43|3.7|v,w|0
+hung_que|Húng quế|rau|g|1|23|3|v,w|0
+la_chanh|Lá chanh|rau|g|1|20|2|v,w|0
+la_lot|Lá lốt|rau|g|1|20|2|v,w|0
+la_mo|Lá mơ|rau|g|1|20|2|v|0
+ngai_cuu|Ngải cứu|rau|g|1|30|3|v,w|0
+xa_lach|Xà lách|rau|g|1|15|1.4|v|0
+rau_song|Rau sống các loại|rau|g|1|20|1.5|v|0
+ngo_sen|Ngó sen|rau|g|1|60|2|v,fb|0
+bap_chuoi|Bắp chuối|rau|g|1|25|1|v,fb|0
+hoa_thien_ly|Hoa thiên lý|rau|g|1|40|3|v,c|0
+mang_tay|Măng tây|rau|g|1|20|2.2|v,mg|0
+ngo_om|Rau om (ngổ)|rau|g|1|20|2|v|0
+rau_mui|Rau mùi (ngò)|rau|g|1|23|2|v|0
+ca_chua|Cà chua|cu|quả|100|18|0.9|v|0
+ca_rot|Cà rốt|cu|củ|80|41|0.9|v,fb|0
+khoai_tay|Khoai tây|cu|củ|150|77|2|cb,b6|0
+khoai_so|Khoai sọ|cu|g|1|112|1.5|cb|0
+khoai_mo|Khoai mỡ|cu|g|1|118|1.5|cb|0
+khoai_lang|Khoai lang|cu|củ|120|86|1.6|cb,fb|0
+bi_do|Bí đỏ|cu|g|1|26|1|v,cb,b6|0
+bi_xanh|Bí xanh|cu|g|1|13|0.4|v,c|0
+bi_dao|Bí đao|cu|g|1|13|0.4|v,c|0
+bau|Bầu|cu|g|1|14|0.6|v,c|0
+muop|Mướp|cu|g|1|20|1|v,c|0
+muop_dang|Mướp đắng (khổ qua)|cu|g|1|17|1|v,c|0
+su_su|Su su|cu|g|1|19|0.8|v|0
+dua_leo|Dưa leo|cu|g|1|15|0.7|v,c|0
+ca_tim|Cà tím|cu|quả|150|25|1|v,fb|0
+dau_bap|Đậu bắp|cu|g|1|33|2|v,mg,fb|0
+dau_co_ve|Đậu cô ve|cu|g|1|31|1.8|v,fb|0
+dau_que|Đậu que|cu|g|1|31|1.8|v,fb|0
+ngo_ngot|Ngô ngọt (hạt)|cu|g|1|86|3.2|cb|0
+ngo_bao_tu|Ngô bao tử|cu|g|1|26|2|v|0
+hanh_tay|Hành tây|cu|củ|150|40|1.1|v|0
+hanh_tim|Hành tím|cu|củ|15|72|2.5|w|0
+toi|Tỏi|cu|tép|4|149|6.4|w|0
+gung|Gừng|cu|g|1|80|1.8|w|0
+sa|Sả|cu|cây|30|99|1.8|w|0
+ot|Ớt|cu|quả|6|40|2|hot|0
+nghe|Nghệ tươi|cu|g|1|80|2|w|0
+rieng|Riềng|cu|g|1|71|1|w|0
+cu_cai|Củ cải trắng|cu|g|1|18|0.6|v,c|0
+me_chua|Me chua|cu|g|1|239|2.8|sw|0
+khe|Khế chua|cu|quả|100|31|1|v|0
+sau|Quả sấu|cu|g|1|40|1|v|0
+mit_non|Mít non|cu|g|1|40|2|v,fb|0
+mang_tuoi|Măng tươi / măng luộc|cu|g|1|27|2.6|v,fb|0
+dua_chua|Dưa cải chua|cu|g|1|20|1|v,sa|0
+kim_chi|Kim chi|cu|g|1|15|1|v,sa,hot|0
+khom|Dứa (thơm)|cu|g|1|50|0.5|sw|0
+xoai_xanh|Xoài xanh|cu|g|1|60|0.8|sw|0
+du_du_xanh|Đu đủ xanh|cu|g|1|43|0.5|v|0
+chanh|Chanh|cu|quả|60|29|1.1|v|0
+tac|Tắc (quất)|cu|quả|15|30|1|v|0
+dau_phong|Đậu phộng (lạc)|cu|g|1|567|26|n,mg|0
+me_rang|Mè (vừng) rang|cu|g|1|573|18|n,mg|0
+nuoc_dua|Nước dừa|cu|ml|1|19|0.7|sw|0
+nuoc_cot_dua|Nước cốt dừa|cu|ml|1|197|2|sw|0
+sung|Quả sung|cu|g|1|74|0.8|sw|0
+gao|Gạo|bot|g|1|360|7|cb|0
+com_chin|Cơm trắng|bot|bát|150|130|2.7|cb|0
+bun_tuoi|Bún tươi|bot|g|1|110|1.7|cb|0
+pho_tuoi|Bánh phở tươi|bot|g|1|140|2|cb|0
+mien|Miến khô|bot|g|1|340|0.2|cb|0
+mi_trung|Mì trứng khô|bot|g|1|350|11|cb|0
+mi_an_lien|Mì ăn liền|bot|gói|75|440|9|cb,sa|0
+nui|Nui khô|bot|g|1|360|12|cb|0
+mi_y|Mì Ý khô|bot|g|1|360|12|cb|0
+hu_tieu|Hủ tiếu khô|bot|g|1|350|6|cb|0
+banh_trang|Bánh tráng|bot|g|1|330|1|cb|0
+banh_mi|Bánh mì|bot|ổ|80|270|9|cb|0
+bot_chien_xu|Bột chiên xù|bot|g|1|360|8|cb|0
+bot_mi|Bột mì|bot|g|1|364|10|cb|0
+bot_xeo|Bột bánh xèo|bot|g|1|360|6|cb|0
+bot_nang|Bột năng / bột bắp|gv|muỗng canh|8|350|0|cb|1
+rong_bien|Rong biển (lá khô)|bot|g|1|300|30|mg,fe|0
+dau_xanh|Đậu xanh|bot|g|1|347|24|mg,fe,fb|0
+mi_can|Mì căn|bot|g|1|120|25|b6|0
+thinh|Thính gạo rang|bot|g|1|380|7|cb|0
+dau_an|Dầu ăn|gv|muỗng canh|13.5|884|0||1
+nuoc_mam|Nước mắm|gv|muỗng canh|18|35|5|f,sa|1
+nuoc_tuong|Nước tương|gv|muỗng canh|17|60|6||1
+duong|Đường|gv|muỗng canh|12.5|387|0||1
+muoi|Muối|gv|muỗng cà phê|5|0|0|sa|1
+tieu|Tiêu|gv|muỗng cà phê|2|251|10|w|1
+hat_nem|Hạt nêm|gv|muỗng cà phê|4|200|10|sa|1
+dau_hao|Dầu hào|gv|muỗng canh|18|50|4|sa|0
+tuong_ot|Tương ớt|gv|muỗng canh|17|30|1|hot|0
+tuong_ca|Tương cà|gv|muỗng canh|17|100|1||0
+sa_te|Sa tế|gv|muỗng canh|15|400|2|hot,w|0
+mam_tom|Mắm tôm|gv|muỗng canh|18|60|8|f,sa,sh|0
+bot_ca_ri|Bột cà ri|gv|muỗng canh|7|325|14|w|0
+bot_nghe|Bột nghệ|gv|muỗng cà phê|3|312|8|w|0
+ngu_vi_huong|Ngũ vị hương|gv|muỗng cà phê|3|300|5|w|0
+mat_ong|Mật ong|gv|muỗng canh|21|304|0|sw|0
+bia|Bia|gv|ml|1|43|0.5||0
+giam|Giấm|gv|muỗng canh|15|18|0||0
+mayonnaise|Sốt mayonnaise|gv|muỗng canh|14|680|1||0
+dau_me|Dầu mè|gv|muỗng cà phê|4.5|884|0||0
+tuong_den|Tương đen|gv|muỗng canh|17|220|2|sa|0
+tuong_ban|Tương bần|gv|muỗng canh|18|55|5|sa|0
+nuoc_mau|Nước màu (caramel)|gv|muỗng canh|15|300|0||0
+gia_vi_lau_thai|Gia vị lẩu Thái|gv|gói|50|200|5|hot,sa|0
+cu_nang|Củ năng|cu|g|1|97|1.4|v|0
