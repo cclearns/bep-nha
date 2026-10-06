@@ -38,32 +38,40 @@ for f in sorted(glob.glob(os.path.join(SRC, 'recipes', '*.txt'))):
 for line in families.all_lines():
     lines.append(('families', line))
 
-GROUPS = {'heo', 'ga', 'vit', 'bo', 'ca', 'haisan', 'trung', 'dauhu', 'rau', 'canh', 'nuoc'}
+GROUPS = {'ngot', 'heo', 'ga', 'vit', 'bo', 'ca', 'haisan', 'trung', 'dauhu', 'rau', 'canh', 'nuoc'}
 METHODS = {'kho', 'xao', 'chien', 'hap', 'nuong', 'ham', 'tron', 'canh', 'nuoc', 'com'}
-ROLES = {'man', 'rau', 'canh', 'bat', 'kem'}
-STRONG_FE = {'bo_thit', 'bo_nam', 'trau', 'ngan', 'hau', 'ngao', 'so', 'trung_vit_lon', 'rau_dien', 'rau_ngot',
+# gắn nhãn dịp cho một số món cũ: tl = tiện lợi / mang đi, dt = date night
+AUTO_OC = [('tl', x) for x in ('Cơm nắm rong biển trứng', 'Kimbap', 'Bánh mì ốp la', 'Gỏi cuốn', 'Onigiri (', 'Tamagoyaki', 'Quesadilla', 'Bánh mì kẹp phô mai', 'Bánh mì nướng trứng bơ', 'Bánh mì xíu mại chay', 'Chả giò chay', 'Nem rán', 'Tacos gà', 'Trứng cuộn rau củ', 'Gyeran-mari', 'Mì xào trứng xúc xích', 'Cơm trộn trứng')] + [('dt', x) for x in ('Paella', 'Sukiyaki', 'Vịt quay', 'Cá hồi áp chảo chanh', 'Tôm xào tỏi dầu ô liu', 'Spaghetti carbonara', 'Bò lúc lắc', 'Gà nướng chanh', 'Chanchan yaki')]
+CUISINES = {'vn', 'jp', 'cn', 'kr', 'th', 'sea', 'in', 'me', 'med', 'eu', 'ru', 'us', 'latin'}
+ROLES = {'man', 'rau', 'canh', 'bat', 'kem', 'ngot'}
+STRONG_FE = {'dau_lang', 'bo_lat', 'bo_bam', 'bo_thit', 'bo_nam', 'trau', 'ngan', 'hau', 'ngao', 'so', 'trung_vit_lon', 'rau_dien', 'rau_ngot',
              'rau_day', 'moc_nhi', 'luoi_lon', 'ca_moi', 'dau_xanh', 'rong_bien', 'cua_dong'}
 WARM_ING = {'gung', 'sa', 'nghe', 'rieng', 'bot_nghe', 'ngu_vi_huong', 'bot_ca_ri', 'he', 'toi_tay', 'ngai_cuu'}
 COOL_ING = {'bi_dao', 'bi_xanh', 'bau', 'muop', 'muop_dang', 'mong_toi', 'rau_day', 'rau_muong', 'cua_dong', 'dua_leo',
             'gia', 'rau_nhut', 'can_nuoc', 'can_tay', 'hoa_thien_ly', 'rau_ngot', 'cu_cai'}
-MG_ING = {'rau_dien', 'mong_toi', 'cai_ngot', 'cai_xanh', 'bong_cai', 'dau_phu', 'dau_hu_non', 'dau_bap', 'mang_tay',
+MG_ING = {'dau_ga', 'dau_lang', 'dau_den_hop', 'wakame', 'cai_bo_xoi', 'bo_trai', 'rau_dien', 'mong_toi', 'cai_ngot', 'cai_xanh', 'bong_cai', 'dau_phu', 'dau_hu_non', 'dau_bap', 'mang_tay',
           'dau_phong', 'me_rang', 'rong_bien', 'dau_xanh', 'bi_do', 'ca_thu', 'ca_moi', 'ca_nuc', 'ca_bac_ma'}
-B6_ING = {'ga_dui', 'ga_canh', 'ga_nguyen', 'ga_uc', 'ca_thu', 'khoai_tay', 'khoai_lang', 'bi_do', 'nam_bao_ngu',
+B6_ING = {'ca_hoi', 'ca_saba', 'bo_trai', 'ga_dui', 'ga_canh', 'ga_nguyen', 'ga_uc', 'ca_thu', 'khoai_tay', 'khoai_lang', 'bi_do', 'nam_bao_ngu',
           'mi_can', 'ca_basa', 'ca_ro_phi', 'bo_thit'}
-OM_ING = {'ca_nuc', 'ca_bac_ma', 'ca_com', 'ca_thu', 'ca_moi', 'ca_cam'}
+OM_ING = {'ca_hoi', 'ca_saba', 'ca_ngu_hop', 'ca_nuc', 'ca_bac_ma', 'ca_com', 'ca_thu', 'ca_moi', 'ca_cam'}
 CARB_COMFORT = {'khoai_tay', 'khoai_lang', 'khoai_so', 'khoai_mo', 'bi_do', 'gao', 'com_chin', 'gao_nep', 'ngo_ngot'}
 VEG_ING = {k for k, v in ING.items() if 'v' in v['t']}
 
-PORK = {'ba_chi','nac_vai','nac_dam','thit_bam','suon_non','chan_gio','duoi_lon','tai_lon','long_lon','luoi_lon','mui_lon','dai_lon','xuc_xich','xuong_heo'}
+PORK = {'heo_lat', 'bacon', 'ba_chi','nac_vai','nac_dam','thit_bam','suon_non','chan_gio','duoi_lon','tai_lon','long_lon','luoi_lon','mui_lon','dai_lon','xuc_xich','xuong_heo'}
 BEEF = {'bo_thit','bo_nam','bo_gan','trau'}
 recipes, seen = [], set()
 errors = []
 for src, line in lines:
     p = line.split('|')
-    if len(p) != 11:
+    if len(p) not in (11, 12, 13):
         errors.append(f'{src}: sai số cột ({len(p)}): {line[:60]}')
         continue
-    name, grp, method, role, mins, diff, sv, ing, steps, tip, sub = [x.strip() for x in p]
+    name, grp, method, role, mins, diff, sv, ing, steps, tip, sub = [x.strip() for x in p[:11]]
+    cuisine = p[11].strip() if len(p) >= 12 else 'vn'
+    oc = [x for x in (p[12].strip().split(',') if len(p) == 13 else []) if x]
+    for k, pre in AUTO_OC:
+        if name.startswith(pre) and k not in oc: oc.append(k)
+    if cuisine not in CUISINES: errors.append(f'{name}: ẩm thực {cuisine}')
     if grp not in GROUPS: errors.append(f'{name}: nhóm {grp}')
     if method not in METHODS: errors.append(f'{name}: cách {method}')
     if role not in ROLES: errors.append(f'{name}: vai {role}')
@@ -103,7 +111,7 @@ for src, line in lines:
     om = [i for i in ids if i in OM_ING]
     comfort = [i for i in ids if i in CARB_COMFORT]
     vegn = len([i for i in ids if i in VEG_ING])
-    salty = 'sa' in tags and (any(i in ids for i in ('nuoc_mam', 'tom_kho', 'dua_chua', 'kim_chi', 'mam_tom', 'tuong_den', 'xuc_xich', 'mi_an_lien', 'gia_vi_lau_thai')))
+    salty = 'sa' in tags and (any(i in ids for i in ('nuoc_mam', 'tom_kho', 'dua_chua', 'kim_chi', 'mam_tom', 'tuong_den', 'xuc_xich', 'mi_an_lien', 'gia_vi_lau_thai', 'miso', 'bacon', 'gochujang', 'tobanjan', 'curry_roux')))
     hot = 'hot' in tags
     fried = method == 'chien'
     raw_cold = method == 'tron'
@@ -165,7 +173,7 @@ for src, line in lines:
     aisles = sorted({ING[i]['a'] for i in ids})
     recipes.append(dict(
         id=rid, n=name, g=grp, m=method, r=role, t=int(mins), d=int(diff), sv=sv, i=items, s=st,
-        tip=tip, sub=sub, k=ps, p=pp, tg=sorted((tags & {'m', 's', 'sh', 'e', 'f', 'n'}) | ({'pk'} if ids & PORK else set()) | ({'bf'} if ids & BEEF else set())),
+        tip=tip, sub=sub, k=ps, p=pp, cu=cuisine, oc=oc, tg=sorted((tags & {'m', 's', 'sh', 'e', 'f', 'n', 'd'}) | ({'pk'} if ids & PORK else set()) | ({'bf'} if ids & BEEF else set())),
         chay=not (tags & {'m', 's', 'f'}), ph=ph, mo=mood, ml=meals,
         feat=dict(fe=bool(strong), warm=bool(warm), cool=bool(cool), mg=bool(mg), om=bool(om), hot=hot, salty=bool(salty), fried=fried, veg=vegn >= 2),
     ))

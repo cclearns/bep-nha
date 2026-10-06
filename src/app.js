@@ -11,9 +11,9 @@ const RICE = REC.find(r => r.n.startsWith('Cơm trắng')).id;
 const GROUPS = [
   ['heo', '🐖', 'Heo', '#e58a8a'], ['ga', '🍗', 'Gà', '#f0b455'], ['vit', '🦆', 'Vịt & Ngan', '#b9895b'], ['bo', '🐂', 'Bò & Trâu', '#b5523b'],
   ['ca', '🐟', 'Cá', '#5f9fc0'], ['haisan', '🦐', 'Tôm & Hải sản', '#4cb3a5'], ['trung', '🥚', 'Trứng', '#f2d04c'],
-  ['dauhu', '🍄', 'Đậu phụ & Nấm', '#a58cc4'], ['rau', '🥬', 'Rau củ', '#6fae4f'], ['canh', '🍲', 'Canh', '#e8a33d'], ['nuoc', '🍜', 'Bún · Phở · Mì · Cơm', '#d9822b']];
+  ['dauhu', '🍄', 'Đậu phụ & Nấm', '#a58cc4'], ['rau', '🥬', 'Rau củ', '#6fae4f'], ['canh', '🍲', 'Canh', '#e8a33d'], ['ngot', '🍰', 'Tráng miệng', '#e17a93'], ['nuoc', '🍜', 'Bún · Phở · Mì · Cơm', '#d9822b']];
 const GM = Object.fromEntries(GROUPS.map(g => [g[0], { e: g[1], n: g[2], c: g[3] }]));
-const ROLES = [['man', 'Món mặn'], ['rau', 'Món rau'], ['canh', 'Canh'], ['bat', 'Món một bát'], ['kem', 'Gỏi / ăn kèm']];
+const ROLES = [['man', 'Món mặn'], ['rau', 'Món rau'], ['canh', 'Canh'], ['bat', 'Món một bát'], ['kem', 'Gỏi / ăn kèm'], ['ngot', 'Tráng miệng']];
 const RM = Object.fromEntries(ROLES);
 const METHODS = [['kho', 'Kho · Rim'], ['xao', 'Xào · Rang · Sốt'], ['chien', 'Chiên · Rán'], ['hap', 'Luộc · Hấp'], ['nuong', 'Nướng'], ['ham', 'Hầm · Om'], ['tron', 'Trộn · Cuốn'], ['canh', 'Nấu canh'], ['nuoc', 'Món nước'], ['com', 'Cơm']];
 const MM = Object.fromEntries(METHODS);
@@ -30,11 +30,15 @@ const PH = {
   luteal: { e: '🌙', n: 'Trước kỳ kinh (PMS)', s: 'Trước kỳ', range: 'Khoảng ngày 16–28',
     d: 'Dễ thèm ngọt, đầy hơi, cáu gắt, mệt mỏi. Nên bổ sung magie (rau lá xanh, đậu, hạt, cá), vitamin B6 (gà, cá, khoai), tinh bột tốt (khoai, bí đỏ, cơm gạo lứt). Giảm món quá mặn, chiên rán và đồ ngọt.' }
 };
+const CUIS = [['vn', '🍲', 'Việt Nam'], ['jp', '🍣', 'Nhật'], ['cn', '🥢', 'Trung'], ['kr', '🥘', 'Hàn'], ['th', '🌶️', 'Thái'], ['sea', '🥥', 'Đông Nam Á'], ['in', '🍛', 'Ấn Độ'], ['me', '🧆', 'Trung Đông & Phi'], ['med', '🫒', 'Địa Trung Hải'], ['eu', '🥖', 'Âu'], ['ru', '🥟', 'Nga & Đông Âu'], ['us', '🍔', 'Mỹ & Anh'], ['latin', '🌮', 'Latinh']];
+const CM = Object.fromEntries(CUIS.map(c => [c[0], c]));
+const OCC = [['tl', '🍱', 'Tiện lợi, cầm tay, mang đi'], ['dt', '💕', 'Date night / tiếp khách']];
+const OM = Object.fromEntries(OCC.map(o => [o[0], o]));
 const SLOTS = [['sang', 'Sáng', '🌅'], ['trua', 'Trưa', '☀️'], ['toi', 'Tối', '🌙']];
 const DAYS = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'];
-const AIS = { thit: '🥩 Thịt', ca: '🐟 Cá & hải sản', trung: '🥚 Trứng & đậu phụ', rau: '🥬 Rau xanh & rau thơm', cu: '🥕 Củ, quả & trái cây', nam: '🍄 Nấm', bot: '🍜 Tinh bột, bún, mì', gv: '🧂 Gia vị & đồ khô', kho: '🥫 Đồ khô' };
+const AIS = { thit: '🥩 Thịt', ca: '🐟 Cá & hải sản', trung: '🥚 Trứng & đậu phụ', sua: '🧀 Sữa, bơ, phô mai', rau: '🥬 Rau xanh & rau thơm', cu: '🥕 Củ, quả & trái cây', nam: '🍄 Nấm', bot: '🍜 Tinh bột, bún, mì', gv: '🧂 Gia vị & đồ khô', kho: '🥫 Đồ khô' };
 const DIETS = [['chay', '🌱 Ăn chay (không thịt, cá, nước mắm)'], ['noSea', 'Không hải sản (cá, tôm, mực…)'], ['noEgg', 'Không trứng'], ['noNut', 'Không đậu phộng / hạt'],
-  ['noPork', 'Không thịt heo'], ['noBeef', 'Không thịt bò / trâu'], ['lowSalt', 'Ít mặn (bỏ món nhiều nước mắm, đồ muối)'], ['noHot', 'Không cay']];
+  ['noDairy', 'Không sữa / phô mai / bơ'], ['noPork', 'Không thịt heo'], ['noBeef', 'Không thịt bò / trâu'], ['lowSalt', 'Ít mặn (bỏ món nhiều nước mắm, đồ muối)'], ['noHot', 'Không cay']];
 const TIPS_OK = new Set(['toi', 'hanh_tim', 'hanh_la', 'ot', 'gung']);
 
 /* ============ trạng thái ============ */
@@ -47,7 +51,7 @@ S.cycle = { ...DEF.cycle, ...(S.cycle || {}) };
 if (!S.fridge) S.fridge = Object.fromEntries([...TIPS_OK].map(i => [i, 1]));
 let saveT;
 const save = () => { clearTimeout(saveT); saveT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { } }, 150); };
-const F = { q: '', g: [], r: [], m: [], t: 0, d: 0, mood: [], ph: '', fav: false, sort: 'goi-y', n: 48, open: false };
+const F = { q: '', oc: [], c: [], g: [], r: [], m: [], t: 0, d: 0, mood: [], ph: '', fav: false, sort: 'goi-y', n: 48, open: false };
 let M = null;      // modal hiện tại {type, ...}
 let TODAY = { meal: null };
 let FR = { q: '' };
@@ -87,6 +91,7 @@ const curPhase = () => { if (S.auto) { const a = autoPhase(); if (a) return a.ph
 function dietOK(r) {
   const d = S.diet, t = r.tg;
   if (d.chay && !r.chay) return false; if (d.noSea && t.includes('s')) return false; if (d.noEgg && t.includes('e')) return false; if (d.noNut && t.includes('n')) return false;
+  if (d.noDairy && t.includes('d')) return false;
   if (d.noPork && t.includes('pk')) return false; if (d.noBeef && t.includes('bf')) return false; if (d.lowSalt && r.feat.salty) return false; if (d.noHot && r.feat.hot) return false;
   return true;
 }
@@ -118,6 +123,8 @@ function pickBest(list, ctx, avoid = new Set()) {
 function match(r) {
   if (!dietOK(r)) return false;
   if (F.q) { const toks = norm(F.q).split(/\s+/).filter(Boolean); if (!toks.every(t => r._s.includes(t))) return false; }
+  if (F.oc.length && !F.oc.some(o => r.oc.includes(o))) return false;
+  if (F.c.length && !F.c.includes(r.cu)) return false;
   if (F.g.length && !F.g.includes(r.g)) return false;
   if (F.r.length && !F.r.includes(r.r)) return false;
   if (F.m.length && !F.m.includes(r.m)) return false;
@@ -152,7 +159,7 @@ function render() {
 }
 const chip = (act, attrs, on, label, cls = '') => `<button class="chip ${cls}" data-act="${act}" ${attrs} aria-pressed="${!!on}">${label}</button>`;
 function tagsOf(r) {
-  const t = [`<span class="tag">${MM[r.m]}</span>`];
+  const t = []; r.oc.forEach(o => t.push(`<span class="tag chili">${OM[o][1]} ${o === 'tl' ? 'Tiện lợi' : 'Date night'}</span>`)); if (r.cu !== 'vn') t.push(`<span class="tag honey">${CM[r.cu][1]} ${CM[r.cu][2]}</span>`); t.push(`<span class="tag">${MM[r.m]}</span>`);
   if (r.r !== 'man') t.push(`<span class="tag sky">${RM[r.r]}</span>`);
   if (r.chay) t.push('<span class="tag leaf">🌱 Chay</span>');
   const ph = curPhase(); if (ph && r.ph[ph]) t.push(`<span class="tag rose">${PH[ph].e} Hợp ${PH[ph].s.toLowerCase()}</span>`);
@@ -172,8 +179,8 @@ function card(r, extra) {
 
 /* ============ Món ăn ============ */
 function viewBrowse() {
-  const nf = F.g.length + F.r.length + F.m.length + (F.t ? 1 : 0) + (F.d ? 1 : 0) + F.mood.length + (F.ph ? 1 : 0) + (F.fav ? 1 : 0) + Object.values(S.diet).filter(Boolean).length;
-  return `<div class="h-sec"><h2>Chọn món</h2><p>${REC.length} món ăn cơm nhà · lọc theo nhóm thực phẩm và cách nấu</p></div>
+  const nf = F.oc.length + F.c.length + F.g.length + F.r.length + F.m.length + (F.t ? 1 : 0) + (F.d ? 1 : 0) + F.mood.length + (F.ph ? 1 : 0) + (F.fav ? 1 : 0) + Object.values(S.diet).filter(Boolean).length;
+  return `<div class="h-sec"><h2>Chọn món</h2><p>${REC.length} món: cơm nhà Việt và món Nhật, Hàn, Trung, Âu… dễ nấu · lọc theo nhóm thực phẩm và cách nấu</p></div>
   <div class="browse"><aside class="filters ${F.open ? 'open' : ''}" id="filters">${filtersHTML()}</aside>
   <section><div class="row" style="margin-bottom:10px"><div class="search" style="flex:1;min-width:200px"><input id="q" type="search" placeholder="Tìm món hoặc nguyên liệu (vd: cà chua, gà, sả…)" value="${esc(F.q)}" aria-label="Tìm món"></div>
   <button class="btn f-toggle" data-act="ftoggle">⚙ Bộ lọc${nf ? ` (${nf})` : ''}</button></div>
@@ -182,9 +189,11 @@ function viewBrowse() {
   <select id="sort" class="select" data-bind="sort">${[['goi-y', 'Gợi ý'], ['nhanh', 'Nhanh nhất'], ['it-calo', 'Ít calo nhất'], ['dam', 'Nhiều đạm nhất'], ['az', 'A → Z']].map(o => `<option value="${o[0]}" ${F.sort === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select></div>
   <div id="results"></div></section></div>`;
 }
-const qrowHTML = () => GROUPS.map(g => chip('fl', `data-k="g" data-v="${g[0]}"`, F.g.includes(g[0]), `${g[1]} ${g[2]}`)).join('');
+const qrowHTML = () => OCC.map(g => chip('fl', `data-k="oc" data-v="${g[0]}"`, F.oc.includes(g[0]), `${g[1]} ${g[2].split(',')[0].split(' /')[0]}`)).join('') + CUIS.slice(1).map(g => chip('fl', `data-k="c" data-v="${g[0]}"`, F.c.includes(g[0]), `${g[1]} ${g[2]}`)).join('') + GROUPS.map(g => chip('fl', `data-k="g" data-v="${g[0]}"`, F.g.includes(g[0]), `${g[1]} ${g[2]}`)).join('');
 function filtersHTML() {
-  return `<div class="fgroup"><h4>Nhóm thực phẩm</h4><div class="chips">${GROUPS.map(g => chip('fl', `data-k="g" data-v="${g[0]}"`, F.g.includes(g[0]), `${g[1]} ${g[2]}`)).join('')}</div></div>
+  return `<div class="fgroup"><h4>Dịp / kiểu dùng</h4><div class="chips">${OCC.map(g => chip('fl', `data-k="oc" data-v="${g[0]}"`, F.oc.includes(g[0]), `${g[1]} ${g[2]}`)).join('')}</div></div>
+  <div class="fgroup"><h4>Ẩm thực</h4><div class="chips">${CUIS.map(g => chip('fl', `data-k="c" data-v="${g[0]}"`, F.c.includes(g[0]), `${g[1]} ${g[2]}`)).join('')}</div></div>
+  <div class="fgroup"><h4>Nhóm thực phẩm</h4><div class="chips">${GROUPS.map(g => chip('fl', `data-k="g" data-v="${g[0]}"`, F.g.includes(g[0]), `${g[1]} ${g[2]}`)).join('')}</div></div>
   <div class="fgroup"><h4>Vai trò trong bữa</h4><div class="chips">${ROLES.map(g => chip('fl', `data-k="r" data-v="${g[0]}"`, F.r.includes(g[0]), g[1])).join('')}</div></div>
   <div class="fgroup"><h4>Cách làm</h4><div class="chips">${METHODS.map(g => chip('fl', `data-k="m" data-v="${g[0]}"`, F.m.includes(g[0]), g[1])).join('')}</div></div>
   <div class="fgroup"><h4>Thời gian nấu</h4><div class="chips">${[[0, 'Bất kỳ'], [15, '≤ 15 phút'], [30, '≤ 30 phút'], [60, '≤ 1 giờ']].map(g => chip('fv', `data-k="t" data-v="${g[0]}"`, F.t === g[0], g[1])).join('')}</div></div>
@@ -521,7 +530,7 @@ const ACT = {
   shopdl: () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([shopText()], { type: 'text/plain;charset=utf-8' })); a.download = 'di-cho-' + isoDay() + '.txt'; a.click(); },
   fl: (d) => { toggle(F[d.k], d.v); F.n = 48; syncFilters(); },
   fv: (d) => { const v = d.k === 't' || d.k === 'd' ? +d.v : d.k === 'fav' ? !!d.v : d.v; F[d.k] = v; F.n = 48; syncFilters(); },
-  fclear: () => { Object.assign(F, { q: '', g: [], r: [], m: [], t: 0, d: 0, mood: [], ph: '', fav: false, n: 48 }); render(); },
+  fclear: () => { Object.assign(F, { q: '', oc: [], c: [], g: [], r: [], m: [], t: 0, d: 0, mood: [], ph: '', fav: false, n: 48 }); render(); },
   ftoggle: () => { F.open = !F.open; $('#filters').classList.toggle('open', F.open); },
   more: () => { F.n += 48; renderResults(); },
   diet: (d) => { S.diet[d.k] ? delete S.diet[d.k] : S.diet[d.k] = 1; save(); TODAY.meal = null; render(); },

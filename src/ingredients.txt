@@ -129,7 +129,7 @@ sa|Sả|cu|cây|30|99|1.8|w|0
 ot|Ớt|cu|quả|6|40|2|hot|0
 nghe|Nghệ tươi|cu|g|1|80|2|w|0
 rieng|Riềng|cu|g|1|71|1|w|0
-cu_cai|Củ cải trắng|cu|g|1|18|0.6|v,c|0
+cu_cai|Củ cải trắng daikon (大根)|cu|g|1|18|0.6|v,c|0
 me_chua|Me chua|cu|g|1|239|2.8|sw|0
 khe|Khế chua|cu|quả|100|31|1|v|0
 sau|Quả sấu|cu|g|1|40|1|v|0
@@ -192,3 +192,81 @@ tuong_ban|Tương bần|gv|muỗng canh|18|55|5|sa|0
 nuoc_mau|Nước màu (caramel)|gv|muỗng canh|15|300|0||0
 gia_vi_lau_thai|Gia vị lẩu Thái|gv|gói|50|200|5|hot,sa|0
 cu_nang|Củ năng|cu|g|1|97|1.4|v|0
+# --- Nguyên liệu quốc tế (mua được ở siêu thị Nhật) ---
+miso|Miso (味噌)|gv|muỗng canh|18|200|12|sa|0
+mirin|Mirin (みりん)|gv|muỗng canh|18|240|0.2|sw|0
+sake_nau|Sake nấu ăn (料理酒)|gv|muỗng canh|15|110|0.3||0
+hondashi|Hondashi bột dashi (ほんだし)|gv|muỗng cà phê|3|210|18|sa|0
+katsuobushi|Cá bào katsuobushi (かつお節)|kho|g|1|340|75|s|0
+wakame|Rong biển wakame khô (乾燥わかめ)|kho|g|1|130|13|mg|0
+cai_bo_xoi|Cải bó xôi (ほうれん草)|rau|g|1|23|2.9|v,fe,mg|0
+gobo|Ngưu bàng (ごぼう)|cu|g|1|65|1.8|v,fb|0
+ca_hoi|Cá hồi (鮭)|ca|g|1|200|20|s,om,b6|0
+ca_saba|Cá saba (鯖)|ca|g|1|250|20|s,om,b6|0
+ca_ngu_hop|Cá ngừ đóng hộp (ツナ缶)|kho|g|1|130|26|s,om|0
+heo_lat|Thịt heo lát mỏng (豚薄切り)|thit|g|1|250|17|m|0
+bo_lat|Thịt bò lát mỏng (牛薄切り)|thit|g|1|230|17|m,fe|0
+bo_bam|Thịt bò băm (牛ひき肉)|thit|g|1|250|17|m,fe|0
+tteok|Bánh gạo Hàn (トッポギ)|bot|g|1|230|4|cb|0
+mi_yakisoba|Mì yakisoba (焼きそば麺)|bot|g|1|165|4|cb|0
+vo_gyoza|Vỏ há cảo (餃子の皮)|bot|g|1|290|9|cb|0
+tortilla|Bánh tortilla (トルティーヤ)|bot|cái|35|300|8|cb|0
+curry_roux|Viên cà ri Nhật (カレールウ)|gv|g|1|510|6|sa|0
+gochujang|Gochujang (コチュジャン)|gv|muỗng canh|18|170|4|hot,sa|0
+gochugaru|Ớt bột Hàn gochugaru (韓国唐辛子粉)|gv|muỗng cà phê|2|280|12|hot|0
+tobanjan|Tương đậu ớt Tứ Xuyên (豆板醤)|gv|muỗng cà phê|6|60|3|hot,sa|0
+tieu_tu_xuyen|Tiêu Tứ Xuyên / sansho (花椒・山椒)|gv|muỗng cà phê|2|250|10|w|0
+curry_green|Sốt cà ri xanh Thái (グリーンカレーペースト)|gv|muỗng canh|15|120|2|hot,sa|0
+tom_yum_paste|Sốt tom yum (トムヤムペースト)|gv|muỗng canh|15|150|2|hot,sa|0
+garam_masala|Garam masala (ガラムマサラ)|gv|muỗng cà phê|2|330|10|w|0
+paprika|Bột paprika (パプリカパウダー)|gv|muỗng cà phê|2|280|14||0
+oregano|Oregano khô (オレガノ)|gv|muỗng cà phê|1|265|9|w|0
+gia_vi_taco|Gia vị taco (タコスシーズニング)|gv|muỗng canh|8|300|8|hot|0
+salsa|Sốt salsa (サルサソース)|gv|muỗng canh|16|30|1||0
+olive_oil|Dầu ô liu (オリーブオイル)|gv|muỗng canh|13.5|884|0||0
+dau_ga|Đậu gà đóng hộp (ひよこ豆)|kho|g|1|130|7|mg,fb,cb|0
+dau_lang|Đậu lăng khô (レンズ豆)|kho|g|1|350|25|fe,mg,fb|0
+dau_den_hop|Đậu đen đóng hộp (ブラックビーンズ)|kho|g|1|130|8|fe,fb,cb|0
+dau_do_hop|Đậu đỏ đóng hộp (レッドキドニー)|kho|g|1|120|8|fe,fb,cb|0
+ca_chua_hop|Cà chua đóng hộp (ホールトマト)|kho|g|1|20|1|v|0
+olive|Ô liu (オリーブ)|kho|g|1|115|0.8||0
+bo_sua|Bơ lạt (バター)|sua|g|1|717|0.8|d|0
+sua_tuoi|Sữa tươi (牛乳)|sua|ml|1|67|3.3|d|0
+kem_tuoi|Kem tươi (生クリーム)|sua|ml|1|330|2|d|0
+pho_mai_parmesan|Phô mai Parmesan bột (パルメザン)|sua|g|1|430|38|d|0
+pho_mai_mozza|Phô mai mozzarella / phô mai pizza (ピザ用チーズ)|sua|g|1|280|22|d|0
+feta|Phô mai feta (フェタ)|sua|g|1|265|14|d|0
+sua_chua|Sữa chua không đường (プレーンヨーグルト)|sua|g|1|60|4|d|0
+bacon|Thịt xông khói (ベーコン)|thit|g|1|400|13|m,sa|0
+bi_ngoi|Bí ngòi (ズッキーニ)|cu|g|1|17|1.2|v|0
+ot_chuong|Ớt chuông (パプリカ)|cu|quả|150|30|1|v|0
+mui_tay|Mùi tây parsley (パセリ)|rau|g|1|36|3|v|0
+bo_trai|Bơ trái (アボカド)|cu|quả|150|160|2|fb,mg|0
+mi_udon|Mì udon (うどん)|bot|g|1|105|2.6|cb|0
+cu_den|Củ dền (ビーツ)|cu|g|1|43|1.6|v,fe|0
+dua_cai_bap|Dưa cải bắp sauerkraut (ザワークラウト)|kho|g|1|19|0.9|v,sa|0
+dau_trang_hop|Đậu trắng đóng hộp (白いんげん豆)|kho|g|1|110|7|mg,fb,cb|0
+pho_mai_cheddar|Phô mai cheddar (チェダーチーズ)|sua|g|1|400|25|d|0
+bo_dau_phong|Bơ đậu phộng (ピーナッツバター)|gv|muỗng canh|16|590|25|n|0
+cumin|Bột thì là Ai Cập cumin (クミン)|gv|muỗng cà phê|2|375|18|w|0
+la_nguyet_que|Lá nguyệt quế (ローリエ)|gv|lá|0.3|313|7||0
+banh_sandwich|Bánh mì sandwich lát (食パン)|bot|lát|32|265|8.5|cb|0
+gao_nep|Gạo nếp (もち米)|bot|g|1|360|7|cb|0
+umeboshi|Mơ muối umeboshi (梅干し)|kho|quả|10|33|0.9|sa|0
+wasabi|Wasabi (わさび)|gv|muỗng cà phê|5|110|3|hot|0
+mustard|Mù tạt (マスタード)|gv|muỗng cà phê|5|66|4||0
+ruou_vang_do|Rượu vang đỏ (赤ワイン)|gv|muỗng canh|15|85|0.1||0
+ruou_vang_trang|Rượu vang trắng (白ワイン)|gv|muỗng canh|15|82|0.1||0
+balsamic|Giấm balsamic (バルサミコ酢)|gv|muỗng canh|16|88|0.5|sw|0
+ham|Giăm bông (ハム)|thit|g|1|150|18|m,sa|0
+bo_steak|Bít tết bò (ステーキ用牛肉)|thit|g|1|200|20|m,fe|0
+cuu_suon|Sườn cừu (ラムチョップ)|thit|g|1|290|17|m,fe|0
+vit_nguc|Ức vịt (鴨むね肉)|thit|g|1|190|18|m,fe|0
+so_diep|Sò điệp (ホタテ)|ca|g|1|72|13|s,sh|0
+ca_tuyet|Cá tuyết (鱈)|ca|g|1|80|18|s|0
+ca_sashimi|Cá sashimi hồi / ngừ (刺身用)|ca|g|1|150|22|s,om|0
+luon_nuong|Lươn nướng sốt (うなぎ蒲焼)|ca|g|1|230|17|s,sa|0
+socola|Socola đen (チョコレート)|kho|g|1|540|6|mg|0
+dau_tay|Dâu tây (イチゴ)|cu|g|1|32|0.7|v|0
+chuoi|Chuối (バナナ)|cu|quả|100|89|1.1|sw|0
+gelatin|Gelatin bột (ゼラチン)|kho|g|1|335|85||0

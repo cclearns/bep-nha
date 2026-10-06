@@ -12,6 +12,8 @@ Website tĩnh (một file `index.html`), giao diện tiếng Việt, responsive.
 ## Build lại
     python3 build.py
 
+Món quốc tế nằm ở `src/recipes/qt_*.txt`: thêm cột thứ 12 là mã ẩm thực (`jp`, `cn`, `kr`, `th`, `in`, `med`, `eu`, `latin`; bỏ trống = Việt).
+
 Sửa/thêm món: thêm một dòng vào `src/recipes/*.txt` theo định dạng
 `Tên|nhóm|cách|vai|phút|khó|số phần|id:lượng id:lượng …|bước 1; bước 2; …|mẹo|thay thế` rồi chạy `build.py`.
 Calo được tính tự động từ nguyên liệu, danh sách đi chợ cũng lấy từ đó.
